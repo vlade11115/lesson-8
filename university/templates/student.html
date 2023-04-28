@@ -1,0 +1,7 @@
+Редагування студента
+
+<form method="post" action="{% url 'student_view' form.instance.id %}">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit">
+</form>

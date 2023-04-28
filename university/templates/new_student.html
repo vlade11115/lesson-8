@@ -1,0 +1,7 @@
+Створення нового студента
+
+<form method="post" action="{% url 'new_student' %}">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit">
+</form>
